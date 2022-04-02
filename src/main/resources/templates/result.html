@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pura vida por el mundo</title>
+</head>
+<body>
+    <h1>Deeplink for Skyscanner</h1>
+    <p th:text="'Original url: ' + ${converter.url}" />
+    <p th:text="'Deeplink: ' + ${converter.deepLink}" />
+    <p th:text="'Shorten url: ' + ${converter.shortenUrl}" />
+    <a href="/converter">Create another deeplink</a>
+</body>
+</html>

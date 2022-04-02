@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pura vida por el mundo</title>
+</head>
+<body>
+
+    <h1>Create deeplink for Skyscanner</h1>
+    <form action="#" th:action="@{/converter}" th:object="${converter}" method="post">
+        <p>Skyscanner url: <input type="text" th:field="*{url}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>
